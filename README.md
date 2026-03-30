@@ -129,7 +129,7 @@ Since this is **unsupervised** (no ground-truth rankings), we use three proxy me
 
 | Limitation | Explanation |
 |------------|-------------|
-| No semantic understanding | `cop` and `police` are treated as different words — the model matches tokens not meaning |
+| No semantic understanding | `cop` and `police` are treated as different words the model matches tokens not meaning |
 | Cold start problem | Only works for movies already in the training set |
 | Plot descriptions only | Ignores cast, director, release year, ratings, box office |
 | Short plots = weak vectors | A 5-word description produces an unreliable vector |
@@ -141,7 +141,7 @@ Since this is **unsupervised** (no ground-truth rankings), we use three proxy me
 
 | Improvement | Why it helps |
 |-------------|-------------|
-| **Sentence-Transformers (SBERT)** | Understands synonyms — `cop` = `police` = `detective` |
+| **Sentence-Transformers (SBERT)** | Understands synonyms `cop` = `police` = `detective` |
 | **Collaborative Filtering** | Uses real user ratings alongside content similarity |
 | **BM25 ranking** | Better term weighting formula than TF-IDF |
 | **Genre + Rating weighting** | Metadata boosts final score |
