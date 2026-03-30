@@ -20,7 +20,7 @@ Cosine Similarity
 Top-5 Recommendations
 (ranked by similarity score)
 
-## 📦 Dataset
+##  Dataset
 
 | Property | Detail |
 |----------|--------|
@@ -30,7 +30,7 @@ Top-5 Recommendations
 | Size | ~50,000+ movies |
 
 ### 4. Run all cells top to bottom
-⚠️ Important: After running the column inspection cell, update TITLE_COL, DESC_COL, and GENRE_COL with the actual column names from your dataset before continuing.
+Important: After running the column inspection cell, update TITLE_COL, DESC_COL, and GENRE_COL with the actual column names from your dataset before continuing.
 
 ---
 
