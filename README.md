@@ -125,5 +125,29 @@ Since this is **unsupervised** (no ground-truth rankings), we use three proxy me
 
 ---
 
+## Limitations
+
+| Limitation | Explanation |
+|------------|-------------|
+| No semantic understanding | `cop` and `police` are treated as different words — the model matches tokens not meaning |
+| Cold start problem | Only works for movies already in the training set |
+| Plot descriptions only | Ignores cast, director, release year, ratings, box office |
+| Short plots = weak vectors | A 5-word description produces an unreliable vector |
+| Stemming trade-off | Improves recall but `"movies"` becomes `"movi"` |
+
+---
+
+## Future Improvements
+
+| Improvement | Why it helps |
+|-------------|-------------|
+| **Sentence-Transformers (SBERT)** | Understands synonyms — `cop` = `police` = `detective` |
+| **Collaborative Filtering** | Uses real user ratings alongside content similarity |
+| **BM25 ranking** | Better term weighting formula than TF-IDF |
+| **Genre + Rating weighting** | Metadata boosts final score |
+| **FAISS vector search** | Scales to millions of movies with instant lookup |
+| **Streamlit web app** | Live interactive recommendations in browser |
+
+---
 
 
